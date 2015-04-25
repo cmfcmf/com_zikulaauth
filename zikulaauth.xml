@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension type="component" version="3.2.0" method="upgrade">
-    <name>Zikula Authentication</name>
+<extension type="component" version="3.0" method="upgrade">
+    <name>com_zikulaauth</name>
+    <author>Christian Flach</author>
+    <creationDate>March 2015</creationDate>
+    <copyright>(c) Christian Flach</copyright>
+    <license>MIT</license>
+    <authorUrl>https://cmfcmf.github.io</authorUrl>
     <version>0.0.1</version>
+    <description>Allows Zikula users to authenticate with their Joomla credentials.</description>
+    <administration>
+    </administration>
 </extension>

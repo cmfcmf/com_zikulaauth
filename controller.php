@@ -19,8 +19,7 @@ class ZikulaAuthController extends JControllerLegacy
 
     private function checkRequiredParameters()
     {
-
-        if ($this->username == '' || $this->password == '' || !$this->secureCompare($this->code, $this->originalCode)) {
+        if (!is_string($this->username) || !is_string($this->password) || !is_string($this->code) || $this->username == '' || $this->password == '' || !$this->secureCompare($this->code, $this->originalCode)) {
             header('HTTP/1.1 400 Bad Request', true, 400);
             jexit();
         }
